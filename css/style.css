@@ -363,8 +363,8 @@ h6 {
 }
 @media (max-width: 767.98px) {
   .info-top-img__text {
-    font-size: 20px;
-    line-height: 2rem;
+    font-size: 24px;
+    line-height: 1.25em;
   }
   .info-top-img__control {
     flex-direction: column;
