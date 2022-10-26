@@ -658,4 +658,61 @@ h6 {
   }
 }
 /*================================================*/
+.join-us {
+  padding: 100px 0;
+  background-color: #E5C643;
+}
+
+.join-us__title {
+  margin: 0 auto;
+  padding-bottom: 30px;
+  font-weight: 900;
+  font-size: 55px;
+  line-height: 1.25em;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #FFFFFF;
+  max-width: 960px;
+}
+
+.join-us__text {
+  padding-bottom: 40px;
+  text-align: center;
+  font-size: 32px;
+  line-height: 35px;
+  letter-spacing: 0.03em;
+  color: #FFFCF8;
+}
+
+.form__row {
+  margin: 0 auto;
+  padding: 20px 0;
+  max-width: 570px;
+  background: #FFFFFF;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 30px;
+}
+
+.form__button button {
+  padding: 20px;
+  font-weight: 500;
+  font-size: 33px;
+  line-height: 1.25em;
+  letter-spacing: 0.03em;
+  text-transform: capitalize;
+  color: #FFFFFF;
+  background: #000000;
+}
+
+@media (max-width: 767.98px) {
+  .form__row {
+    flex-direction: column;
+  }
+  ::-webkit-input-placeholder {
+    text-align: center;
+  }
+}
 /*================================================*/
