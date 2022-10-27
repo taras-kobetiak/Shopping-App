@@ -239,7 +239,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    column-gap: 25px;
+    column-gap: 50px;
 }
 
 .logo-header {
@@ -259,8 +259,7 @@
 
 .menu-header__list {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: center;
     flex-wrap: wrap;
     column-gap: 25px;
     row-gap: 20px;
@@ -279,7 +278,6 @@
             background-color: #000000;
             color: #FEFEFE;
         }
-
 
         &:active {
             color: #EBD96B;
@@ -316,9 +314,23 @@
     }
 }
 
+@media (max-width: 575.98px) {
+    .header__container {
+        column-gap: 20px;
+    }
+
+    .menu-header__list {
+        justify-content: flex-end;
+    }
+}
+
 @media (max-width: 319.98px) {
     .header__container {
         flex-direction: column;
+    }
+
+    .menu-header__list {
+        justify-content: center;
     }
 }
 
@@ -790,6 +802,14 @@
 .join-us {
     padding: 100px 0;
     background-color: #E5C643;
+}
+
+.join-us__container {
+    margin: 0;
+
+    @media (max-width: 767.98px) {
+        margin: 40px 0;
+    }
 }
 
 .join-us__title {
