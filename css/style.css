@@ -171,38 +171,46 @@ h6 {
 @media (max-width: 575.98px) {
   .subtitle {
     padding-bottom: 25px;
-    font-size: 24px;
+    font-size: 22px;
   }
 }
-@media (max-width: 350.98px) {
+@media (max-width: 319.98px) {
   .subtitle {
     font-size: 16px;
   }
 }
 
 .subtitle__row {
-  background: url("../../img/new arrivals/bg.png") 97% 75%/150px no-repeat;
+  padding: 10px;
+  position: relative;
+}
+
+.background-icon {
+  max-width: 220px;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  z-index: -1;
+}
+@media (max-width: 991.98px) {
+  .background-icon {
+    max-width: 150px;
+  }
 }
 @media (max-width: 767.98px) {
-  .subtitle__row {
-    background: url("../../img/new arrivals/bg.png") 95% 70%/120px no-repeat;
+  .background-icon {
+    max-width: 130px;
   }
 }
 @media (max-width: 575.98px) {
-  .subtitle__row {
-    background: url("../../img/new arrivals/bg.png") 95% 65%/90px no-repeat;
+  .background-icon {
+    max-width: 100px;
   }
 }
-@media (max-width: 350.98px) {
-  .subtitle__row {
-    background: url("../../img/new arrivals/bg.png") 90% 45%/70px no-repeat;
+@media (max-width: 319.98px) {
+  .background-icon {
+    max-width: 80px;
   }
-}
-
-.subtitle__text {
-  padding-right: 20px;
-  padding-bottom: 10px;
-  flex: 1 0 auto;
 }
 
 /*================================================*/
@@ -217,9 +225,15 @@ h6 {
   line-height: 45px;
   letter-spacing: -0.05em;
   color: #FFFFFF;
+  transition: 0.5s 0s ease;
 }
 .button button:hover {
-  transform: scale(101%);
+  border: 1px solid black;
+  color: #000;
+  background-color: #FFFFFF;
+}
+.button button:active {
+  color: #EBD96B;
 }
 @media (max-width: 767.98px) {
   .button button {
@@ -339,7 +353,7 @@ h6 {
   font-size: 22px;
   line-height: 33px;
   color: #242323;
-  transition-delay: 1s;
+  transition: 1s 0s ease;
 }
 .menu-header__item a:hover {
   background-color: #000000;
@@ -498,7 +512,7 @@ h6 {
 
 @media (max-width: 991.98px) {
   .new-arrivals__subtitle {
-    margin: 0 auto;
+    justify-content: center;
   }
   .new-arrivals__items {
     flex-direction: row;
@@ -648,8 +662,9 @@ h6 {
   max-width: 655px;
 }
 
-@media (max-width: 1199.98px) {
-  .youngs-favourite__subtitle {
+@media (max-width: 1399.98px) {
+  .youngs-favourite__subtitle,
+.youngs-favourite__items {
     justify-content: center;
   }
 }
@@ -883,6 +898,8 @@ h6 {
 }
 .about-us__link:hover {
   cursor: pointer;
+  transform: scale(110%);
+  transition: 0.5s 0s ease;
 }
 
 .menu-footer {
